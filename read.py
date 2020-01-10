@@ -28,3 +28,15 @@ print(new[0])
 print(new[1])
 
 
+good = []
+for d in data:
+		if 'good' in d:
+			good.append(d)
+
+print('一共有', len(good), '筆留言包含good字')
+
+good = [d for d in data if 'good' in d ]
+
+print (len(good))
+
+
